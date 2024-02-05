@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim"; 
+import { loadSlim } from "tsparticles-slim";
 
 const BgParticel = () => {
   const particlesInit = useCallback(async engine => {
@@ -15,7 +15,7 @@ const BgParticel = () => {
   return (
     <Particles
       id="tsparticles"
-      className="h-[80vh]"
+
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
@@ -42,7 +42,7 @@ const BgParticel = () => {
               quantity: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 90,
               duration: 0.4,
             },
           },
@@ -86,6 +86,7 @@ const BgParticel = () => {
           },
         },
         detectRetina: true,
+        zLayers: 1
       }}
     />
   );

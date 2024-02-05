@@ -1,9 +1,10 @@
-import BgParticel from "./components/BgParticel";
+
+import Layout from "./pages/Layout";
 
 const App = () => {
   return (
-    <div className="h-[70vh]">
-      <BgParticel />
+    <div >
+      <Layout />
     </div>
   );
 }
